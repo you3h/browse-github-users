@@ -1,4 +1,5 @@
 FROM node:lts-alpine as build-client
+ARG VITE_GITHUB_TOKEN
 ENV GENERATE_SOURCEMAP false
 WORKDIR /usr/src/client
 COPY ./client/package*.json ./

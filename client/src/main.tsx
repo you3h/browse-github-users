@@ -11,9 +11,9 @@ import {
 import ErrorBoundary from './ErrorBoundary.tsx';
 import { ErrorPage } from './pages/ErrorPage.tsx';
 import { Home } from './pages/Home.tsx';
+import { SkeletonLoading } from './components';
 
 import './index.css';
-import { SkeletonLoading } from './components';
 
 const queryClient = new QueryClient();
 
@@ -22,8 +22,6 @@ createRoot(document.getElementById('root')!).render(
     <QueryClientProvider client={queryClient}>
       <Router>
         <ErrorBoundary>
-          {/* <Home /> */}
-
           <div className='flex justify-center w-screen min-h-[600px] md:px-8 md:py-4 mb-20'>
             <div className='flex flex-col w-full lg:max-w-[994px]'>
               <Suspense fallback={<SkeletonLoading className='w-4' />}>

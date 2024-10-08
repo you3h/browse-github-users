@@ -5,6 +5,7 @@ WORKDIR /usr/src/client
 COPY ./client/package*.json ./
 RUN npm ci
 COPY ./client .
+RUN npm run test
 RUN npm run build
 
 FROM node:lts-alpine as build-srv

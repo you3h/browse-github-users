@@ -14,6 +14,6 @@ type Story = StoryObj<typeof SkeletonLoading>;
 
 export const CustomSize: Story = {
   args: {
-    className: 'w-32 h-8', // Smaller size
+    className: 'w-32 h-8',
   },
 };

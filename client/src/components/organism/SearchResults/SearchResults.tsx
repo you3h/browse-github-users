@@ -1,11 +1,11 @@
 import { Tooltip } from 'react-tooltip';
 
-import useGithubUserStore from '../../store';
-import { useGetUsersByUserName } from '../../hooks/getAllusers';
+import useGithubUserStore from '../../../store';
+import { useGetUsersByUserName } from '../../../hooks/getAllusers';
 
-import { Accordion } from '../Accordion/Accordion';
-import { SkeletonLoading } from '../SkeletonLoading/SkeletonLoading';
-import { UserNameWithAvatar } from '../UserNameWithAvatar/UserNameWithAvatar';
+import { Accordion } from '../../atoms/Accordion/Accordion';
+import { SkeletonLoading } from '../../atoms/SkeletonLoading/SkeletonLoading';
+import { UserNameWithAvatar } from '../../atoms/UserNameWithAvatar/UserNameWithAvatar';
 import { UserRepositories } from '../UserRepositories/UserRepositories';
 
 import infoIcon from '/info.svg';

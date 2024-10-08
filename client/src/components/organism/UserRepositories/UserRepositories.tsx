@@ -1,8 +1,8 @@
 import { useEffect, useState } from 'react';
-import useGithubUserStore from '../../store';
+import useGithubUserStore from '../../../store';
 
-import { useGetUserRepositories } from '../../hooks/getUserRepositories';
-import { Button } from '../Button/Button';
+import { useGetUserRepositories } from '../../../hooks/getUserRepositories';
+import { Button } from '../../atoms/Button/Button';
 
 import starIcon from '/star.svg';
 

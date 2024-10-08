@@ -1,8 +1,9 @@
+import type { FC } from 'react';
 type ErrorPageProps = {
   isFatal?: boolean;
 };
 
-export const ErrorPage: React.FC<ErrorPageProps> = ({ isFatal = false }) => {
+export const ErrorPage: FC<ErrorPageProps> = ({ isFatal = false }) => {
   return (
     <div className='flex flex-col items-center gap-4 justify-center h-screen'>
       <span>

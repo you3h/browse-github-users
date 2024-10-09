@@ -29,6 +29,7 @@ export const Search = () => {
             key: 'Enter',
             onKeyPress: () => onSearch(searchUserName),
           }}
+          enterKeyHint='search'
         />
         <Button
           text='Search'

@@ -12,7 +12,7 @@ import infoIcon from '/info.svg';
 
 const IntialState = () => {
   return (
-    <div className='border mt-[20px] rounded-md border-gray-200 flex-grow bg-gray-100 p-4 h-[255px] flex items-center justify-center'>
+    <div className='border mt-[20px] rounded-md border-gray-200 flex-grow bg-gray-100 p-4 h-[255px] flex items-center justify-center text-center'>
       <span>Please type in your search parameter in the Input field</span>
     </div>
   );
@@ -20,7 +20,7 @@ const IntialState = () => {
 
 const EmptyState = () => {
   return (
-    <div className='border rounded-md border-gray-200 flex-grow bg-gray-100 p-4 h-[255px] flex items-center justify-center'>
+    <div className='border rounded-md border-gray-200 flex-grow bg-gray-100 p-4 h-[255px] flex items-center justify-center text-center'>
       <span>No result was found.</span>
     </div>
   );

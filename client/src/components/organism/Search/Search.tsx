@@ -23,6 +23,7 @@ export const Search = () => {
           name='username'
           label='Enter Github Username:'
           placeholder='Username'
+          type='search'
           onChange={(e) => setSearchUserName(e.target.value)}
         />
         <Button

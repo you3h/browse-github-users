@@ -40,12 +40,16 @@ export const UserRepositories = ({ userName }: UserRepositoriesProps) => {
         return (
           <div
             key={repo.id}
-            className='flex justify-between border border-gray-500 rounded-md py-2 px-4 cursor-pointer hover:bg-gray-200'
+            className='flex justify-between border gap-2 border-gray-500 rounded-md py-2 px-4 cursor-pointer hover:bg-gray-200'
             onClick={() => window.open(repo.html_url, '_blank')}
           >
-            <div className='flex flex-col gap-1'>
-              <span className='font-bold'>{repo.name}</span>
-              <span className='text-xs md:w-[300px]'>{repo.description}</span>
+            <div className='flex flex-col gap-1 flex-grow max-w-max overflow-hidden px-1'>
+              <span className='font-bold text-ellipsis overflow-hidden'>
+                {repo.name}
+              </span>
+              <span className='text-xs line-clamp-5 text-ellipsis'>
+                {repo.description}
+              </span>
             </div>
             <div className='flex gap-2 justify-center items-center min-w-[44px]'>
               <span className='text-sm'>{repo.stargazers_count}</span>

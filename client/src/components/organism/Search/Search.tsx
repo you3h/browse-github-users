@@ -25,6 +25,10 @@ export const Search = () => {
           placeholder='Username'
           type='search'
           onChange={(e) => setSearchUserName(e.target.value)}
+          keyPress={{
+            key: 'Enter',
+            onKeyPress: () => onSearch(searchUserName),
+          }}
         />
         <Button
           text='Search'
